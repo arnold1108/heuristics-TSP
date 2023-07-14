@@ -6,14 +6,14 @@ import pandas as pd
 from geopy import distance
 from geopy.geocoders import Nominatim
 
-# Create a function that takes a variable arguments and creates a list of towns
+# A function that takes a variable arguments and creates a list of towns
 
 
 def my_towns(*args):
     """Create a list of towns from arguments"""
     return list(args)
 
-# Creating a function that creates a pandas dataframe of cities and their lattitudes and longitudes
+# A function that creates a pandas dataframe of cities and their lattitudes and longitudes
 
 
 def create_towns_dataframe(towns=None):
@@ -59,7 +59,7 @@ def tsp(towns_df):
 # A main function that gets the shortest distance a number of times
 
 
-def main(count):
+def main(count, df=None):
     # Create empty distance and city lists
     distance_list = []
     towns_list_list = []
