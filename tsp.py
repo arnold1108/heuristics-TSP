@@ -63,7 +63,10 @@ def main(count, df=None):
     # Create empty distance and city lists
     distance_list = []
     towns_list_list = []
-    tdf = create_towns_dataframe()
+    if df is None:
+        tdf = create_towns_dataframe()
+    else:
+        tdf = df
     # Iterate through the simulation count times
     for i in range(count + 1):
         # Get the total distance
