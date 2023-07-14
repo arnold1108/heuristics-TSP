@@ -3,16 +3,19 @@
 import click
 from random import shuffle
 import pandas as pd
-import geopy
 from geopy import distance
 from geopy.geocoders import Nominatim
 
 # Create a function that takes a variable arguments and creates a list of towns
+
+
 def my_towns(*args):
     """Create a list of towns from arguments"""
     return list(args)
 
 # Creating a function that creates a pandas dataframe of cities and their lattitudes and longitudes
+
+
 def create_towns_dataframe(towns=None):
     """A dataframe of towns and their latitudes and longitudes"""
     if towns is None:
@@ -31,6 +34,8 @@ def create_towns_dataframe(towns=None):
     return df
 
 # A function that gets the total distance travelled across all the towns
+
+
 def tsp(towns_df):
     # Create a list of cities
     towns_list = towns_df["Town"].to_list()
@@ -52,6 +57,8 @@ def tsp(towns_df):
     return total_distance, towns_list
 
 # A main function that gets the shortest distance a number of times
+
+
 def main(count):
     # Create empty distance and city lists
     distance_list = []
