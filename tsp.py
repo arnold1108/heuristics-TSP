@@ -40,12 +40,15 @@ def create_towns_dataframe(towns=None):
     return df
 
 # A function that gets the total distance travelled across all the towns
+
+
 def tsp(towns_df):
-    # Create a list of cities  
+    # Create a list of cities
     towns_df = towns_df["Town"].to_list()
     # Shuffle the list of towns
-    # Create a distance list to append to 
-    # Get the distance between the towns and append to the list 
+    # Create a distance list to append to
+    # Get the distance between the towns and append to the list
+    # return the total distance covered and the list of cities visited 
 
 
 # Creating a click group
