@@ -1,4 +1,4 @@
-from tsp import my_towns, create_towns_dataframe, tsp
+from tsp import my_towns, create_towns_dataframe, main 
 import pytest
 
 # A list of towns 
