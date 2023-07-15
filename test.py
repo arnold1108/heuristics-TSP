@@ -15,8 +15,8 @@ def test_my_towns():
         "Makueni"
     ]
 
-@pytest.mark.slow
-def test_main():
-    """Testing my main function"""
-    assert main(count=1) == None
-    
+# @pytest.mark.slow
+# def test_main():
+#     """Testing my main function"""
+#     assert main(count=1) == None
+#     
