@@ -1,4 +1,4 @@
-from tsp import my_towns, create_towns_dataframe, main 
+from tsp import my_towns, create_towns_dataframe 
 import pytest
 
 # A list of towns 
@@ -6,7 +6,7 @@ town_list = my_towns("Kericho", "Narok", "Makueni")
 
 town_df = create_towns_dataframe(town_list)
 
-@pytest.mark.slow
+# @pytest.mark.slow
 def test_my_towns():
     """Testing my_towns function"""
     assert my_towns("Kericho", "Narok", "Makueni")  == [
